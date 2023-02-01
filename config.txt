@@ -1,0 +1,24 @@
+D2 -> Elbow
+D3 -> Shoulder
+D4 -> Fist
+
+Fist:
+0 = 10us -> 180 2500us
+
+
+        printf("Odaberi motor\n");
+        scanf("%d", &ud);
+
+        printf("\nUnesi stupnjeve");
+        scanf("%d", &kut);
+
+        //if(kut <= 2000 && kut >= 1000)
+            
+
+        if(ud == 1)
+            fist_pwm.pulsewidth_us(kut);
+        else if(ud == 2)
+            elbow_pwm.pulsewidth_us(kut);
+        else if(ud == 3)
+            shoulder_pwm.pulsewidth_us(kut);
+        
